@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: darkslateblue;
+  height: 40px;
+  padding: 0 24px;
+  width: 100%;
+  align-items: center;
+  color: white;
+}
+
+ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.child {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: blueviolet;
+  color: white;
+  height: 350px;
+  width: 200px;
+  margin: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.child:hover {
+  transform: scale(1.1); /* Büyütme efekti */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.child img {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  border-radius: 5%;
+}
+
+.food-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.food-name-price {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  align-items: center;
+  gap: 10px;
+}
+
+.food-name {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.food-price {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.food-description {
+  font-size: 12px;
+  text-align: left;
+  margin-top: 10px;
+  width: 80%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  background-color: darkslateblue;
+  height: 40px;
+  padding: 0 24px;
+  width: 100%;
+  align-items: center;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blueviolet;
+}
